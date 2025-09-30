@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+<body class="bg-gray-900 text-black">
+  <div class="wrapper">
+    <!-- Left illustration -->
+    <div class="illustration">
+      <img src="login.png" alt="Illustration" />
+    </div>
+
+    <!-- Right form -->
+    <div class="form-container">
+      <h2 class="text-black">Log in</h2>
+      <p class="subtext text-black">
+        Welcome! Join my coding journey and get access to my projects, ideas,
+        and future creations.
+      </p>
+      <form action="../landingpage/landingpage.html" method="get">
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-group">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn">Let’s start!</button>
+      </form>
+
+      <div class="social-login">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+
+      <p class="switch-text text-black">
+        Don’t have an account? <a href="signup.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

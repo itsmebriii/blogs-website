@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* para sakto kahit phone */
+  padding: 20px; /* breathing space sa maliit na screens */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row; /* default desktop */
+}
+
+/* Left illustration */
+.illustration {
+  flex: 1;
+  background: #f5f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right form */
+.form-container {
+  flex: 1;
+  padding: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: #888;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-login a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-login a:hover {
+  color: #28a745;
+}
+
+.switch-text {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.switch-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* stack illustration + form */
+    max-width: 100%;
+  }
+
+  .illustration {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .subtext {
+    text-align: center;
+  }
+}
