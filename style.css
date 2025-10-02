@@ -5,8 +5,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* para sakto kahit phone */
-  padding: 20px; /* breathing space sa maliit na screens */
+  min-height: 100vh;
+  padding: 20px; 
 }
 
 .wrapper {
@@ -19,10 +19,9 @@ body {
   max-width: 900px;
   width: 100%;
   overflow: hidden;
-  flex-direction: row; /* default desktop */
+  flex-direction: row; 
 }
 
-/* Left illustration */
 .illustration {
   flex: 1;
   background: #f5f6ff;
@@ -37,7 +36,6 @@ body {
   height: auto;
 }
 
-/* Right form */
 .form-container {
   flex: 1;
   padding: 40px;
@@ -130,10 +128,9 @@ h2 {
   text-decoration: underline;
 }
 
-/* 📱 Mobile Responsive Design */
 @media (max-width: 768px) {
   .wrapper {
-    flex-direction: column; /* stack illustration + form */
+    flex-direction: column; 
     max-width: 100%;
   }
 
